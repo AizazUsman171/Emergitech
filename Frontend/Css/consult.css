@@ -1,0 +1,392 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #000000, #4155A6);
+}
+
+
+/* Hero Section */
+.consultation-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 50px; 
+}
+
+.consultation-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.consultation-hero p {
+    font-size: 1rem;
+    margin-bottom: 50px;
+    padding: 0 15px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.consultation-hero .btn {
+    padding: 12px 30px;
+    background-color: #fff;
+    color: #4155A6;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+}
+
+.consultation-hero .btn:hover {
+    background-color: #4155A6;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    opacity: 1;
+}
+
+.consultation-hero .btn:active {
+    transform: translateY(-1px); 
+    background-color: #2f479e; 
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.1s ease, background-color 0.2s ease; 
+}
+
+
+
+/* Why Consultation Section */
+.why-consultation-section {
+    background: linear-gradient(to bottom, #090B16, #4155A6);
+    min-height: max-content;
+    padding: 60px 20px; 
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.why-consultation-section h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.why-consultation-section h3 {
+    font-size: 0.4rem;
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.feature-icon {
+    font-size: 48px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.feature-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Video Section */
+.video-section {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #4155A6, #6475d0); 
+    text-align: center;
+    color: white;
+}
+
+.video-section h2 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+
+.video-container {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    filter: drop-shadow(2px 4px 6px black);
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Testimonials Section */
+.consultation-testimonials {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #6475d0, #303e77);
+    color: black;
+    text-align: center;
+}
+
+.consultation-testimonials h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.testimonial-box p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #000;
+}
+
+.testimonial-author i {
+    font-size: 20px;
+    color: #4155A6;
+}
+
+.testimonial-author h4 {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.testimonial-author span {
+    font-size: 0.9rem;
+}
+
+/* Consultation Form Section */
+.consultation-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
+    padding: 100px 20px;
+    color: white;
+}
+
+.consultation-section h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.consultation-section p {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.consultation-form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.consultation-form .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.consultation-form label {
+    color: white;
+    font-weight: 300;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.consultation-form input,
+.consultation-form textarea {
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 14px;
+    width: 100%;
+}
+
+.consultation-form button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #080916;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+    align-self: center;
+}
+
+.consultation-form button:hover {
+    background-color: #0c0d20;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.consultation-form button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 480px) {
+    .consultation-hero h1 {
+        font-size: 1.8rem;
+    }
+
+
+    .consultation-hero p {
+        font-size: 0.9rem;
+    }
+
+    .consultation-hero .btn {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+
+.consultation-hero .btn:hover {
+    background-color: #ddd;
+    transform: translateY(-3px);
+}
+
+
+.consultation-section p {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Error Message Styling */
+.error-message {
+    color: #ff3860; 
+    font-size: 0.875em; 
+    margin-top: 5px;
+    display: none;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    padding-left: 20px; 
+}
+
+.error-message::before {
+    content: '\f06a'; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ff3860;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Success Message Styling */
+.success-message {
+    color: #48c774;
+    font-size: 1em;
+    display: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 999; 
+    transition: opacity 0.5s ease-out, bottom 0.5s ease-out;
+    opacity: 1;
+}
+
+.success-message.hide {
+    opacity: 0; 
+    bottom: 0; 
+}
+
+.success-message::before {
+    content: '\f058';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #48c774;
+    margin-right: 8px;
+}
+
+.consultation-section .container h2{
+    color:#fff;
+}
+.consultation-section .container p{
+    color:#ccc;
+}

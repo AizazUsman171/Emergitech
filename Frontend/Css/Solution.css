@@ -1,0 +1,117 @@
+/* Solutions Intro Section */
+.solutions-intro {
+    background: linear-gradient(to bottom, #000000, #4155A6); /* Same gradient background as Contact Section */
+    padding: 100px 20px 60px; /* Add more top padding to keep some distance from the navbar */
+    color: white;
+    text-align: center;
+}
+
+.solutions-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 400; /* Set to a lighter weight */
+}
+
+.solutions-intro p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Solutions Intro Section */
+.solutions-intro {
+    background: linear-gradient(to bottom, #000000, #4155A6);
+    padding: 100px 20px 60px;
+    color: white;
+    text-align: center;
+}
+
+.solutions-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.solutions-intro p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Solutions Cards Section */
+.solutions-cards {
+    background: linear-gradient(to bottom, #000000, #4155A6);
+    padding: 60px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+.solution-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid white;
+    border-radius: 15px;
+    color: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 1000px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    text-align: left;
+    position: relative;
+    transform: perspective(1000px) rotateY(45deg) translateY(50px);
+    opacity: 0;
+}
+
+.solution-card h2 {
+    font-size: 2rem;
+    color: #ffff;
+    margin-bottom: 15px;
+}
+
+.solution-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.solution-icon {
+    font-size: 3rem;
+    color: #cccc;
+    margin-bottom: 15px;
+}
+
+/* Responsive Styling for Solutions Page */
+@media (max-width: 768px) {
+    .solutions-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .solutions-intro {
+        padding: 80px 20px 40px;
+    }
+
+    .solutions-intro h1 {
+        font-size: 2rem;
+    }
+
+    .solutions-intro p {
+        font-size: 1rem;
+    }
+
+    .solution-card {
+        width: 90%;
+    }
+
+    .solution-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .solution-card p {
+        font-size: 0.9rem;
+    }
+}
+
+

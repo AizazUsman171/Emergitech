@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Emergitech - Business Transformation, delivering software, web design, and consulting services to emerging businesses."
+    />
+    <meta
+      name="keywords"
+      content="Emergitech, Business Transformation, Consulting, Software Development, Web Development"
+    />
+
+    <title>Emergitech - Business Transformation</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for LinkedIn Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/Frontend/Css/preloader.css" />
+    <link rel="stylesheet" href="/Frontend/Css/about.css" />
+    <link rel="stylesheet" href="/Frontend/Css/styles.css" />
+  </head>
+  <body>
+    <!-- PreLoader -->
+    <div id="preloader" class="preloader">
+      <div class="logo-container">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color: white; stop-opacity: 1" />
+              <stop
+                offset="100%"
+                style="stop-color: transparent; stop-opacity: 0"
+              />
+            </linearGradient>
+          </defs>
+          <circle
+            class="circle"
+            cx="50"
+            cy="50"
+            r="45"
+            fill="none"
+            stroke="white"
+            stroke-width="6"
+          />
+          <circle class="filling" cx="50" cy="50" r="45" fill="url(#grad1)" />
+          <text
+            class="company-name"
+            x="50"
+            y="50"
+            text-anchor="middle"
+            dominant-baseline="middle"
+          >
+            Emergitech
+          </text>
+        </svg>
+      </div>
+      <div class="loading-text">Loading... <span id="progress">0%</span></div>
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <!-- Main Website Content -->
+    <div id="main-content" style="display: none">
+      <!-- Navbar -->
+
+      <nav id="navbar">
+        <div class="container">
+          <div class="menu-toggle">☰</div>
+          <!-- Hamburger menu button -->
+          <h1 class="logo">Emergitech</h1>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="/">HOME</a></li>
+            <li><a href="Frontend\templates\about.html">ABOUT</a></li>
+            <li><a href="Frontend\templates\Solution.html">SOLUTIONS</a></li>
+            <li><a href="Frontend\templates\consult.html">CONSULTATION</a></li>
+            <li><a href="Frontend\templates\contact.html">CONTACT</a></li>
+          </ul>
+          <a
+            href="https://www.linkedin.com/company/emergitechsolutions/about/"
+            target="_blank"
+            class="linkedin-link"
+          >
+            <i class="fab fa-linkedin linkedin-logo"></i>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Hero Section with Video Background -->
+      <div class="hero-section">
+        <video autoplay muted loop id="bg-video">
+          <source src="resources\stock.mov" type="video/mp4" />
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="overlay"></div>
+        <div class="hero-text">
+          <h1>Your Dedicated Partner<br />In Business Transformation</h1>
+          <p>Book now a free consultation meeting for your business.</p>
+          <a href="Frontend/templates/consult.html#book-now" class="btn"
+            >BOOK NOW<span class="arrow">→</span></a
+          >
+        </div>
+      </div>
+
+      <!-- "Who We Are" Section -->
+      <section class="who-we-are" id="who-we-are">
+        <div class="who-we-are-container">
+          <div class="who-we-are-video">
+            <video autoplay muted loop>
+              <source src="resources/office-timelapse.mp4" type="video/mp4" />
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
+          <div class="who-we-are-text">
+            <h2>Who We Are</h2>
+            <p>
+              This is the place where startups and businesses find the technical
+              solutions they need to succeed. We specialize in turning your
+              ideas into reality with customized software, web design, and more.
+              Let's create something amazing together.
+            </p>
+            <a href="Frontend/templates/about.html#team" class="btn"
+              >Meet The Team <span class="arrow">→</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Industries Section -->
+      <section class="industries-section" id="industries">
+        <div class="industries-container">
+          <!-- Text Section -->
+          <div class="industries-text">
+            <h2>Industries</h2>
+            <ul>
+              <li>
+                <span class="bullet">﹁</span> Emerging Startups and Businesses
+              </li>
+              <li><span class="bullet">﹁</span> Technology and Software</li>
+              <li><span class="bullet">﹁</span> Manufacturing</li>
+              <li><span class="bullet">﹁</span> Healthcare</li>
+              <li><span class="bullet">﹁</span> Energy</li>
+            </ul>
+          </div>
+
+          <!-- Video Section -->
+          <div class="industries-video">
+            <div class="circle-video-wrapper">
+              <video autoplay muted loop>
+                <source src="resources/server-tracks.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section class="services-section" id="services">
+        <div class="services-header">
+          <h1>Explore Our Solutions</h1>
+          <p>
+            At Emergitech Solutions, we take pride in offering cutting-edge
+            technology solutions tailored to meet the needs of small businesses
+            and startups. Our team of experts specializes in providing a wide
+            range of services designed to empower your business, from building
+            functional, beautiful websites to offering insightful technical
+            advice. With a focus on innovation, collaboration, and
+            results-driven development, we ensure that your business thrives in
+            today’s competitive digital landscape.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-box">
+            <h3>Web Development</h3>
+            <p>
+              We design responsive, user-focused websites that drive business
+              growth and enhance your online presence.
+            </p>
+            <span class="icon"><i class="fa-solid fa-layer-group"></i></span>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-box">
+            <h3>Software Development</h3>
+            <p>
+              Custom software solutions tailored to streamline operations and
+              meet your unique business needs.
+            </p>
+            <span class="icon"><i class="fa-solid fa-chart-column"></i></span>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-box">
+            <h3>App Development</h3>
+            <p>
+              Creating intuitive, high-performance mobile and web apps that
+              align with your business goals.
+            </p>
+            <span class="icon"><i class="fa-solid fa-code"></i></span>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-box">
+            <h3>Technical Consulting</h3>
+            <p>
+              Offering expert advice to navigate the tech landscape and ensure
+              your business stays competitive.
+            </p>
+            <span class="icon"><i class="fa fa-check-double"></i></span>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-box">
+            <h3>Data Management</h3>
+            <p>
+              Providing secure and efficient data management solutions to
+              optimize your operations and support informed decision-making.
+            </p>
+            <span class="icon"><i class="fa-solid fa-bullseye"></i></span>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-box">
+            <a
+              href="Frontend/templates/Solution.html"
+              style="text-decoration: none; color: inherit"
+            >
+              <h3>Explore Solutions</h3>
+              <p>
+                Our tailored tech solutions focus on innovation to meet your unique needs.
+              </p>
+              <span class="icon"><i class="fa-solid fa-arrow-right-long"></i></span>
+            </a>
+          </div>          
+        </div>
+      </section>
+
+      <!-- Expert Knowledge Section -->
+      <section class="expert-knowledge-section" id="expert-knowledge">
+        <div class="content">
+          <h1>Stay Ahead with Expert Knowledge</h1>
+          <p>
+            We specialize in crafting technical solutions for emerging startups
+            and businesses. Our expertise helps you stay competitive, offering
+            customized software, web development, app creation, and more.
+            Discover how our innovative approach can elevate your business to
+            the next level.
+          </p>
+        </div>
+      </section>
+
+      <!-- Clients Section -->
+      <section class="clients-section" id="clients">
+        <div class="clients-header">
+          <h1>Our Clients</h1>
+          <p>We believe every client is a valuable long-term partner.</p>
+        </div>
+
+        <!-- Client Logos Section -->
+        <div class="client-logos-slider">
+          <div class="logos-wrapper">
+            <div class="logo-item black-and-white">
+              <img src="resources/cycle.png" alt="Client 1" />
+            </div>
+            <div class="logo-item black-and-white">
+              <img src="resources/transport.png" alt="Client 2" />
+            </div>
+            <div class="logo-item black-and-white">
+              <img src="resources/KIDSABA.png" alt="Client 3" />
+            </div>
+            <div class="logo-item black-and-white">
+              <img src="resources/salem 1.png" alt="Client 4" />
+            </div>
+            <div class="logo-item black-and-white">
+              <img src="resources/cycle.png" alt="Client 1" />
+            </div>
+            <div class="logo-item black-and-white">
+              <img src="resources/transport.png" alt="Client 2" />
+            </div>
+            <div class="logo-item black-and-white">
+              <img src="resources/KIDSABA.png" alt="Client 3" />
+            </div>
+            <div class="logo-item black-and-white">
+              <img src="resources/salem 1.png" alt="Client 4" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials-section" id="testimonials">
+        <h1>The Perfect Customer Experience</h1>
+
+        <div class="testimonials-container">
+          <div class="testimonial-box">
+            <p>
+              “Emergitech Solutions has truly enhanced our operations here at
+              Kids ABA. Their scheduling software has streamlined our
+              appointment management and improved communication with families.
+              The team took the time to understand our specific needs, and their
+              ongoing support has made a significant difference. We highly
+              recommend their services to any clinic looking to improve
+              efficiency!”
+            </p>
+            <!-- <i class="fas fa-quote-left"></i> -->
+            <div class="testimonial-author">
+              <div>
+                <h4>Kids ABA Services</h4>
+                <!-- <span>Founder, GreenWorks</span> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-box">
+            <p>
+              “We are thrilled with the new website designed by Emergitech for
+              our new startup! It showcases our bike tours and offers an
+              intuitive booking experience that our customers love. The
+              attention to detail and creativity have helped us attract more
+              customers and streamline our operations. Their support has been
+              fantastic, and we can’t recommend them enough!”
+            </p>
+            <!-- <i class="fas fa-quote-left"></i> -->
+            <div class="testimonial-author">
+              <div>
+                <h4>OZ Cycling Tours</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-box">
+            <p>
+              “The website created for us has been a game-changer. The optimized
+              design has increased customer engagement and brought more visitors
+              to our dealership. We appreciate their dedication and hard work in
+              helping us out!”
+            </p>
+            <!-- <i class="fas fa-quote-left"></i> -->
+            <div class="testimonial-author">
+              <div>
+                <h4>Salem Auto Sales</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="footer-section">
+        <div class="footer-container">
+          <!-- Left Side (Logo, Menu) -->
+          <div class="footer-left">
+            <h1>Emergitech</h1>
+            <p>Your Partner in Innovative Solutions.</p>
+            <ul class="footer-menu">
+              <li><a href="/">HOME</a></li>
+              <li><a href="Frontend\templates\about.html">ABOUT</a></li>
+              <li><a href="Frontend\templates\Solution.html">SOLUTIONS</a></li>
+              <li>
+                <a href="Frontend\templates\consult.html">CONSULTATION</a>
+              </li>
+              <li><a href="Frontend\templates\contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+
+          <!-- Right Side (Social Media) -->
+          <div class="footer-right">
+            <h2>Connect with Us</h2>
+            <div class="footer-social">
+              <a
+                href="https://www.linkedin.com/company/emergitechsolutions/about/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Subtle Divider -->
+        <div class="footer-divider"></div>
+
+        <!-- Bottom Footer Section -->
+        <div class="footer-bottom">
+          <p>
+            © 2024, Designed & Developed By
+            <a href="#" target="_blank">Emergitech™</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="Frontend\Scripts\script.js"></script>
+    <script src="Frontend\Scripts\preloader.js"></script>
+  </body>
+</html>

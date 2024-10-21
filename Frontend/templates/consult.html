@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation - Emergitech</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for LinkedIn Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../Css/consult.css">
+    <link rel="stylesheet" href="../Css/styles.css">
+    <link rel="stylesheet" href="../Css/about.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="menu-toggle">☰</div> <!-- Hamburger menu button -->
+            <h1 class="logo">Emergitech</h1>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/">HOME</a></li>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="./Solution.html">SOLUTIONS</a></li>
+                <li><a href="./consult.html">CONSULTATION</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+            <a href="https://www.linkedin.com/company/emergitechsolutions/about/" target="_blank" class="linkedin-link">
+                <i class="fab fa-linkedin linkedin-logo"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section for Consultation -->
+    <section class="consultation-hero">
+        <div class="container">
+            <h1>Transform Your Business with Expert Consultation</h1>
+            <p>We provide customized solutions tailored to your business needs, helping you achieve sustainable growth through technology and innovation.</p>
+            <a href="#book-now" class="btn">Book Your Free Consultation Today</a>
+        </div>
+    </section>
+
+    <!-- Why Consultation Section -->
+    <section class="why-consultation-section">
+        <div class="container">
+            <h1>Why Choose Our Consultation Services?</h1>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <i class="fas fa-chart-line feature-icon"></i>
+                    <h3>Business Growth Strategy</h3>
+                    <p>Receive expert guidance to develop a strategy that will drive growth and maximize efficiency.</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-rocket feature-icon"></i>
+                    <h3>Tailored Solutions</h3>
+                    <p>We design solutions that address the unique challenges faced by your business in today's tech-driven market.</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fas fa-lightbulb feature-icon"></i>
+                    <h3>Innovative Consultation</h3>
+                    <p>Leverage our industry knowledge to discover innovative ways to increase productivity and efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <h2>See How We've Helped Other Businesses</h2>
+            <div class="video-container">
+                <video autoplay muted loop controls>
+                    <source src="../../resources/success-story.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="consultation-testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials-container">
+                <div class="testimonial-box">
+                    <p>“Emergitech Solutions has truly enhanced our operations here at Kids ABA.
+                        Their scheduling software has streamlined our appointment management
+                        and improved communication with families. The team took the time to
+                        understand our specific needs, and their ongoing support has made a
+                        significant difference. We highly recommend their services to any clinic
+                        looking to improve efficiency!”</p>
+                        <!-- <i class="fas fa-quote-left"></i> -->
+                        <div class="testimonial-author">
+                            <div>
+                                <h4>Kids ABA Services</h4>
+                                <!-- <span>Founder, GreenWorks</span> -->
+                            </div>
+                        </div>
+                    </div>
+            
+
+                <div class="testimonial-box">
+                    <p>“We are thrilled with the new website designed by Emergitech for our new
+                        startup! It showcases our bike tours and offers an intuitive booking
+                        experience that our customers love. The attention to detail and creativity
+                        have helped us attract more customers and streamline our operations.
+                        Their support has been fantastic, and we can’t recommend them enough!”</p>
+                        <!-- <i class="fas fa-quote-left"></i> -->
+                    <div class="testimonial-author">
+                        <div>
+                            <h4>OZ Cycling Tours</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="testimonial-box">
+                    <p>“The website created for us has been a game-changer. The optimized
+                        design has increased customer engagement and brought more visitors to
+                        our dealership. We appreciate their dedication and hard work in helping us
+                        out!”</p>
+                        <!-- <i class="fas fa-quote-left"></i> -->
+                    <div class="testimonial-author">
+                        <div>
+                            <h4> Salem Auto Sales                            </h4>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Consultation Form -->
+    <section class="consultation-section" id="book-now">
+        <div class="container">
+            <h2>Book Your Consultation</h2>
+            <p>Fill out the form below to schedule a free consultation with our experts.</p>
+            <form action="#" method="POST" class="consultation-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required minlength="2" maxlength="50" pattern="[a-zA-Z\s]+">
+                    <div class="error-message" id="name-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required pattern="\+?[0-9\s()\-]{7,15}">
+                    <div class="error-message" id="phone-error"></div>
+                </div>                              
+                <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" name="company" maxlength="50">
+                    <div class="error-message" id="company-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="message">How can we assist you?</label>
+                    <textarea id="message" name="message" rows="6" required minlength="10" maxlength="500"></textarea>
+                    <div class="error-message" id="message-error"></div>
+                </div>    
+                <button type="submit" class="btn">Book Consultation</button>
+                <div class="success-message" id="success-message" style="display: none;">Form submitted successfully!</div>
+            </form>            
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+<footer class="footer-section">
+    <div class="footer-container">
+        <!-- Left Side (Logo, Menu) -->
+        <div class="footer-left">
+            <h1>Emergitech</h1>
+            <p>Your Partner in Innovative Solutions.</p> 
+            <ul class="footer-menu">
+                <li><a href="/">HOME</a></li>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="./Solution.html">SOLUTIONS</a></li>
+                <li><a href="./consult.html">CONSULTATION</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <!-- Right Side (Social Media) -->
+        <div class="footer-right">
+            <h2>Connect with Us</h2> 
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/company/emergitechsolutions/about/" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subtle Divider -->
+    <div class="footer-divider"></div>
+
+    <!-- Bottom Footer Section -->
+    <div class="footer-bottom">
+        <p>© 2024, Designed & Developed By <a href="#" target="_blank">Emergitech™</a></p>
+    </div>
+</footer>
+<script src="../Scripts/consult.js"></script>
+</body>
+</html>

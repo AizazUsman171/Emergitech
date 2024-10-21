@@ -1,0 +1,1232 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* Hero Section with Video */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    line-height: 1.2rem;
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #ddd;
+    margin: 20px 0;
+}
+
+/* Styling for the contact button */
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 600;
+}
+
+.btn .arrow {
+    margin-left: 10px;
+}
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* "Who We Are" Section */
+.who-we-are {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+}
+.who-we-are-text h2{
+    font-weight: 100;
+    color: #ffffff;
+}
+
+.who-we-are-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.who-we-are-video {
+    flex: 1;
+    max-width: 50%;
+}
+
+.who-we-are-video video {
+    width: 100%;
+    height: 50%;
+    border-radius: 8px;
+}
+
+.who-we-are-text {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 40px;
+    color: white;
+}
+
+.who-we-are h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.who-we-are p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+
+/* Industries Section */
+.industries-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    height: auto;
+    background-color: #030407;
+}
+
+
+.industries-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.industries-text {
+    flex: 1;
+    color: white;
+    text-align: center;
+}
+
+.industries-text h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.industries-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.industries-text ul li {
+    font-size: 24px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    color:white;
+}
+
+.industries-text ul li .bullet {
+    margin-right: 15px;
+    font-size: 48px;
+    color: white;
+    transform: translateX(0); 
+    transition: transform 0.3s ease;
+}
+
+.industries-text ul li:hover .bullet {
+    transform: translateX(10px);
+  
+}
+
+/* Video Circle */
+.industries-video {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.circle-video-wrapper {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.circle-video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Services Section Styling */
+.services-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #0b0d17; /* Dark background */
+    background: linear-gradient(to bottom, #000000, #4155A6);
+}
+
+.services-header h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 100;
+    color: white;
+}
+
+.services-header p {
+    font-size: 18px;
+    line-height: 1.8; 
+    color: rgba(255, 255, 255, 0.8); 
+    max-width: 800px; 
+    margin: 0 auto; 
+    text-align: center;
+    font-weight: 300;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    padding-top:2.5rem ;
+    margin: 0 auto;
+}
+
+.service-box {
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background-color: transparent;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.service-box h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.service-box p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.service-box .icon {
+    font-size: 32px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* Expert Knowledge Section */
+.expert-knowledge-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+    background: linear-gradient(to bottom, #4155A6, #6475d0); /* Background gradient */
+    text-align: center;
+}
+
+.expert-knowledge-section .content {
+    max-width: 800px;
+}
+
+.expert-knowledge-section h1 {
+    font-size: 48px;
+    font-weight: 100;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.expert-knowledge-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+}
+
+
+/* Clients Section Styling */
+.clients-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #6475d0;
+    color: black;
+}
+
+.clients-header h1 {
+    font-size: 48px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.clients-header p {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 40px;
+}
+
+.client-logos-slider {
+    position: relative;
+    overflow: hidden; 
+    padding-bottom: 30px; 
+    width: 100%;
+}
+
+.logos-wrapper {
+    display: flex;
+    gap: 0px;
+    width: calc(200%);
+    animation: slide 25s linear infinite;
+}
+.logo-item {
+    flex: 0 0 12%; 
+}
+
+.logo-item img {
+    height: 150px; 
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.black-and-white{ 
+    filter: drop-shadow(2px 4px 6px black); 
+
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}   
+
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 80px 20px;
+    background: linear-gradient(to bottom,#6475d0, #9ABCFF);
+    text-align: center;
+}
+
+.testimonials-section h1 {
+    font-size: 48px;
+    font-weight: 100;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testimonial-box {
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 40px 30px;
+    width: 300px;
+    text-align: center;
+    color: #000;
+}
+
+.testimonial-box p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #000
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.testimonial-author i {
+    font-size: 20px;
+    color: #000;
+}
+
+.testimonial-author h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.testimonial-author span {
+    font-size: 14px;
+    font-weight: 50;
+    color: #000;
+}
+
+/* Footer Section Styling */
+.footer-section {
+    background: linear-gradient(135deg, #0d0d0d, #1f1f1f); /* Keeping the dark background */
+    color: #ffffff;
+    padding: 60px 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container for logo and social */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* Left Side: Logo, tagline, and Menu */
+.footer-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-left h1 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #ffffff; /* White for the heading */
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: #cccccc; /* Light gray for the paragraph */
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 12px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #e0e0e0; /* Light gray for menu links */
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-menu a:hover {
+    color: #ffffff; /* White on hover */
+}
+
+/* Right Side: Social Media */
+.footer-right {
+    flex: 1;
+    min-width: 300px;
+    text-align: right;
+}
+
+.footer-right h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #ffffff; /* White for the subheading */
+}
+
+.footer-social a {
+    color: #ffffff;
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-social i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.footer-social a:hover {
+    color: #cccccc; /* Light gray on hover */
+}
+
+/* Subtle Divider */
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    margin: 20px 0;
+    opacity: 0.8;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #cccccc; /* Light gray for footer bottom text */
+}
+
+.footer-bottom a {
+    color: #ffffff; /* White for footer bottom links */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+    color: #1b084e; /* Light gray on hover */
+}
+
+/* Media Query for tablets and smaller screens */
+@media (max-width: 991px) {
+    
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+
+    .btn {
+        padding: 10px 30px;
+        font-size: 1rem;
+    }
+
+    /* Who We Are section */
+    .who-we-are-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .who-we-are-video {
+        padding:20px;
+        max-width:400px;
+        max-height: 300px;
+        margin-bottom: 20px;
+    }
+
+    .who-we-are-text {
+        max-width: 100%;
+        padding-left: 0;
+    }
+    
+    .who-we-are-text h2 {
+        padding-top: 10px;
+    }
+
+    .industries-container {
+        flex-direction: column;
+        align-items:center ;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .industries-text h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .industries-text ul li {
+        font-size: 18px;
+        margin-bottom:10px ;
+        display: flex;
+        white-space: nowrap;
+        align-items: center;
+        transform: translateX(0); 
+        transition: transform 0.3s ease;
+    }
+    .industries-text ul li .bullet {
+        font-size: 20px; 
+        margin-right: 8px;
+        transform: translateX(5); 
+    }
+
+    .circle-video-wrapper {
+        width: 240px;
+        height: 240px;
+        margin-top: 20px;
+    }
+    .circle-video-wrapper video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-header h1 {
+        font-size: 36px;
+    }
+
+    .services-header p {
+        font-size: 16px;
+    }
+
+    .service-box h3 {
+        font-size: 20px;
+    }
+
+    .service-box p {
+        font-size: 14px;
+    }
+    .expert-knowledge-section h1 {
+        font-size: 36px;
+    }
+
+    .expert-knowledge-section p {
+        font-size: 16px;
+    }
+    .clients-header h1 {
+        font-size: 36px;
+    }
+
+    .clients-header p {
+        font-size: 16px;
+    }
+
+    .logo-item {
+        flex: 0 0 25%;
+    }
+
+    .logo-item img {
+        height: 100px;
+    }
+    .testimonials-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-box {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-left, .footer-right {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer-right h2 {
+        font-size: 24px;
+    }
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 480px) {
+
+    .linkedin-nav a {
+    font-size: 16px;
+    }
+/* 
+    #navbar .logo {
+        top: 5px;
+        font-size: 18px;
+    }
+
+    #navbar ul.nav-links {
+        width: 100%;
+    }
+
+    #navbar ul.nav-links li {
+        margin: 10px 0;
+    } */
+
+    .linkedin-link {
+        top: 4.5px;
+        right: 15px;
+    }
+
+    .linkedin-logo {
+        font-size: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.25rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Who We Are section */
+    .who-we-are h2 {
+        font-size: 28px;
+    }
+
+    .who-we-are p {
+        font-size: 14px;
+    }
+
+    .who-we-are-container {
+        flex-direction: column;
+    }
+
+    .who-we-are-video {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .who-we-are-text {
+        text-align: center;
+        padding-left: 0;
+    }
+    .industries-container {
+    flex-direction: column;
+    padding: 20px; 
+    text-align: center;
+    }
+
+    .industries-text h2 {
+    font-size: 22px;
+    }
+
+    .industries-text ul li {
+    font-size: 14px; 
+    white-space: nowrap;
+    padding-right:20px ;
+    margin-left: 10px;
+    transform: translateX(0); 
+    transition: transform 0.3s ease;
+    }
+
+    .industries-text ul li .bullet {
+    font-size: 18px; 
+    }
+
+    .circle-video-wrapper {
+    width: 200px; 
+    height: 200px;
+    }
+    
+    .expert-knowledge-section h1 {
+        font-size: 28px;
+    }
+
+    .expert-knowledge-section p {
+        font-size: 14px;
+    }
+    .clients-header h1 {
+        font-size: 28px;
+    }
+
+    .clients-header p {
+        font-size: 14px;
+    }
+
+    .logo-item {
+        flex: 0 0 30%;
+    }
+
+    .logo-item img {
+        height: 80px; 
+    }
+    .logos-wrapper{
+        animation: slide 5s linear infinite;
+    }
+    .testimonials-section h1 {
+        font-size: 36px; 
+    }
+
+    .testimonial-box {
+        width: 90%; 
+        padding: 30px 20px;
+    }
+
+    .testimonial-box p {
+        font-size: 14px; 
+    }
+
+    .testimonial-author h4 {
+        font-size: 16px; 
+    }
+
+    .testimonial-author i {
+        font-size: 18px; 
+    }
+
+    .testimonial-author span {
+        font-size: 12px; 
+    }
+    .footer-section {
+        padding: 40px 20px;
+    }
+
+    .footer-left h1 {
+        font-size: 28px;
+    }
+
+    .footer-right h2 {
+        font-size: 22px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+
+}
+
+
+/* Media Query for iPhone SE (375px width) */
+@media (max-width: 375px) {
+    .industries-section {
+        padding: 30px 15px;
+        height: auto;
+    }
+
+    .industries-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .industries-text h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .industries-text ul li {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .industries-text ul li .bullet {
+        font-size: 20px;
+        margin-right: 8px;
+    }
+
+    .circle-video-wrapper {
+        width: 240px;
+        height: 240px;
+        margin-top: 20px;
+    }
+
+    .circle-video-wrapper video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Adjust hero section */
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 10px 30px;
+        font-size: 0.9rem;
+    }
+
+    /* Who We Are Section */
+    .who-we-are h2 {
+        font-size: 26px;
+    }
+
+    .who-we-are p {
+        font-size: 14px;
+    }
+
+    .who-we-are-container {
+        flex-direction: column;
+    }
+
+    .who-we-are-video {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .who-we-are-text {
+        text-align: center;
+        padding-left: 0;
+    }
+    
+    .expert-knowledge-section h1 {
+        font-size: 26px;
+    }
+
+    .expert-knowledge-section p {
+        font-size: 13px;
+    }
+    .logos-wrapper{
+        animation: slide 5s linear infinite;
+    }
+    .testimonials-section h1 {
+        font-size: 32px;
+    }
+
+    .testimonial-box {
+        width: 95%; /* Make boxes take more width */
+        padding: 25px 15px;
+    }
+
+    .testimonial-box p {
+        font-size: 13px; /* Smaller text */
+    }
+
+    .testimonial-author h4 {
+        font-size: 15px;
+    }
+
+    .testimonial-author span {
+        font-size: 11px;
+    }
+    .footer-section {
+        padding: 30px 15px;
+    }
+
+    .footer-left h1 {
+        font-size: 26px;
+    }
+
+    .footer-right h2 {
+        font-size: 20px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+}
+
+
+/* Media Query for iPhone 12 Pro (390px width) */
+@media (max-width: 390px) {
+    .industries-section {
+        padding: 30px 15px;
+        height: auto;
+    }
+
+    .industries-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .industries-text h2 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+
+    .industries-text ul li {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .industries-text ul li .bullet {
+        font-size: 22px;
+        margin-right: 8px;
+    }
+
+    .circle-video-wrapper {
+        width: 260px;
+        height: 260px;
+        margin-top: 20px;
+    }
+
+    .circle-video-wrapper video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Adjust hero section */
+    .hero-text h1 {
+        font-size: 2.25rem;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        padding: 12px 35px;
+        font-size: 1rem;
+    }
+
+    /* Who We Are Section */
+    .who-we-are h2 {
+        font-size: 28px;
+    }
+
+    .who-we-are p {
+        font-size: 16px;
+    }
+
+    .who-we-are-container {
+        flex-direction: column;
+    }
+
+    .who-we-are-video {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .who-we-are-text {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .services-header h1 {
+        font-size: 28px;
+    }
+
+    .services-header p {
+        font-size: 14px;
+    }
+
+    .service-box h3 {
+        font-size: 18px;
+    }
+
+    .service-box p {
+        font-size: 13px;
+    }
+
+    .service-box {
+        padding: 30px;
+    }
+    .expert-knowledge-section h1 {
+        font-size: 28px;
+    }
+
+    .expert-knowledge-section p {
+        font-size: 14px;
+    }
+    .logos-wrapper{
+        animation: slide 5s linear infinite;
+    }
+    .testimonials-section h1 {
+        font-size: 30px;
+    }
+
+    .testimonial-box {
+        width: 95%; /* Make boxes take most of the screen width */
+        padding: 20px 15px;
+    }
+
+    .testimonial-box p {
+        font-size: 12px;
+    }
+
+    .testimonial-author h4 {
+        font-size: 14px;
+    }
+
+    .testimonial-author span {
+        font-size: 11px;
+    }
+    .footer-section {
+        padding: 30px 15px;
+    }
+
+    .footer-left h1 {
+        font-size: 26px;
+    }
+
+    .footer-right h2 {
+        font-size: 20px;
+    }
+
+    .footer-bottom p {
+        font-size: 11px;
+    }
+
+    .footer-menu a, .footer-legal a {
+        font-size: 14px;
+    }
+}
+
+
+@media(max-width: 320px){
+    html,body{
+        overflow-x: hidden;
+    }
+    .hero-text h1 {
+        line-height: 1.2rem;
+        font-size: 2rem;
+        font-weight: 200;
+        line-height: 1.2;
+    }
+    
+    .hero-text p {
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: #ddd;
+        margin: 20px 0;
+    }    
+
+    #bg-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        z-index: -1;
+    }
+        .industries-section {
+            padding: 50px 10px; /* Reduce padding for smaller screens */
+        }
+    
+        .industries-container {
+            flex-direction: column; /* Stack text and video vertically */
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .industries-text {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        .industries-text h2 {
+            font-size: 28px; /* Reduce heading size */
+        }
+    
+        .industries-text ul li {
+            font-size: 15px; /* Reduce list item font size */
+        }
+    
+        .industries-text ul li .bullet {
+            font-size: 32px; /* Reduce bullet size */
+        }
+    
+        .circle-video-wrapper {
+            width: 250px;  /* Reduce video circle size */
+            height: 250px;
+        }
+    
+        .circle-video-wrapper video {
+            width: 100%;
+            height: 100%;
+        }
+        .services-section {
+            padding: 40px 10px; /* Reduce padding for smaller screens */
+        }
+    
+        .services-header h1 {
+            font-size: 28px; /* Reduce header font size */
+        }
+    
+        .services-header p {
+            font-size: 14px; /* Reduce paragraph font size */
+            max-width: 280px; /* Narrow max width for text */
+        }
+    
+        .services-grid {
+            grid-template-columns: 1fr; /* Make it a single-column grid */
+            gap: 10px; /* Reduce the gap between service boxes */
+            padding-top: 1.5rem; 
+        }
+    
+        .service-box {
+            padding: 20px; 
+        }
+    
+        .service-box h3 {
+            font-size: 18px;
+        }
+    
+        .service-box p {
+            font-size: 14px; 
+        }
+    
+        .service-box .icon {
+            font-size: 24px; 
+            top: 10px; 
+            right: 10px;
+        }
+    
+        }
+        

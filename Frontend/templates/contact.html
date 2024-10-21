@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Emergitech</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for LinkedIn Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to the shared stylesheet -->
+    <link rel="stylesheet" href="../Css/contact.css">
+    <link rel="stylesheet" href="../Css/about.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="menu-toggle">☰</div> <!-- Hamburger menu button -->
+            <h1 class="logo">Emergitech</h1>
+            <ul class="nav-links">
+                <li><a href="/">HOME</a></li>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="./Solution.html">SOLUTIONS</a></li>
+                <li><a href="./consult.html">CONSULTATION</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+            <a href="https://www.linkedin.com/company/emergitechsolutions/about/" target="_blank" class="linkedin-link">
+                <i class="fab fa-linkedin linkedin-logo"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- CONTACT US Section -->
+    <section class="contact-section" id="contact-us">
+        <div class="container">
+            <h2 class="contact-heading">CONTACT US</h2>
+            <p>Fill out the form below and our team will get back to you promptly.</p>
+            <form action="#" method="POST" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required minlength="2" maxlength="50" pattern="[a-zA-Z\s]+">
+                    <div class="error-message" id="name-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required pattern="^\+?[0-9\s()\-]{7,15}$">
+                    <div class="error-message" id="phone-error"></div>
+                </div>                              
+                <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" name="company" maxlength="50">
+                    <div class="error-message" id="company-error"></div>
+                </div>
+                <div class="form-group">
+                    <label for="message">How can we assist you?</label>
+                    <textarea id="message" name="message" rows="6" required minlength="10" maxlength="500"></textarea>
+                    <div class="error-message" id="message-error"></div>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+                <div class="success-message" id="success-message">Form submitted successfully!</div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h1>Emergitech</h1>
+                <p>Your Partner in Innovative Solutions.</p> 
+                <ul class="footer-menu">
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./Solution.html">SOLUTIONS</a></li>
+                    <li><a href="./consult.html">CONSULTATION</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h2>Connect with Us</h2> 
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/company/emergitechsolutions/about/" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+            <p>© 2024, Designed & Developed By <a href="#" target="_blank">Emergitech™</a></p>
+        </div>
+    </footer>
+     <!-- Include GSAP and ScrollTrigger Plugin -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <script src="../Scripts/contact.js"></script>
+    <script src="../Scripts/solution.js"></script>
+</body>
+
+</html>

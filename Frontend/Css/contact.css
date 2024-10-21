@@ -1,0 +1,213 @@
+/* Universal Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
+    background: linear-gradient(to bottom, #0f0f1b, #2e3670);
+    padding: 80px 35px; 
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-heading {
+    margin-top: 30px;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.08); 
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.6); 
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.contact-form label {
+    color: rgba(255, 255, 255, 0.9); 
+    font-weight: 500;
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #4a90e2; 
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.contact-form button {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #1c2238;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    margin-top: 25px;
+}
+
+.contact-form button:hover {
+    background-color: #31448c;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(49, 68, 140, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 30px;
+        max-width: 100%; 
+    }
+
+    .contact-heading {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    .contact-form button {
+        padding: 12px 30px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-section {
+        padding: 60px 10px;
+    }
+
+    .contact-heading {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form input[type="tel"],
+    .contact-form textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
+
+.contact-section p {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Error Message Styling */
+.error-message {
+    color: #ff3860; 
+    font-size: 0.875em; 
+    margin-top: 5px;
+    display: none;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    padding-left: 20px; 
+}
+
+.error-message::before {
+    content: '\f06a'; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ff3860;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Success Message Styling */
+.success-message {
+    color: #48c774;
+    font-size: 1em;
+    display: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 999; 
+    transition: opacity 0.5s ease-out, bottom 0.5s ease-out; 
+    opacity: 1;
+}
+
+.success-message.hide {
+    opacity: 0;
+    bottom: 0; 
+}
+
+.success-message::before {
+    content: '\f058'; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #48c774;
+    margin-right: 8px;
+}
